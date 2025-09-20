@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Select Mood {% endblock %}
+
+{% block content %}
+
+<div class="select-container">
+    <h2>Select Your Mood 🎭</h2>
+    <form method="POST" action="{{url_for('results')}}">
+        <label for="mood">Mood:</label>
+        <select name="mood" class="mood-select" id="mood" required>
+            <option value="">-- Choose a mood --</option>
+            <option value="happy">Happy / Joy 😊</option>
+            <option value="sad">Sad 😢</option>
+            <option value="fear">Fear / Angry 😠</option>
+            <option value="surprised">Surprised 🤩</option>
+        </select>
+        <button type="submit" class="submit-button">Get Recommendations 🍿</button>
+    </form>
+</div>
+{% endblock %}
