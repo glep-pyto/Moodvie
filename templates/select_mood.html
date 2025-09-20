@@ -5,17 +5,21 @@
 {% block content %}
 
 <div class="select-container">
-    <h2>Select Your Mood 🎭</h2>
+    <h2>What Mood Do You Want to Feel? 🎭</h2>
     <form method="POST" action="{{url_for('results')}}">
         <label for="mood">Mood:</label>
         <select name="mood" class="mood-select" id="mood" required>
             <option value="">-- Choose a mood --</option>
             <option value="happy">Happy / Joy 😊</option>
             <option value="sad">Sad 😢</option>
-            <option value="fear">Fear / Angry 😠</option>
+            <option value="fear">Fear 😱</option>
             <option value="surprised">Surprised 🤩</option>
         </select>
         <button type="submit" class="submit-button">Get Recommendations 🍿</button>
     </form>
 </div>
+
+<form action="{{ url_for('home') }}">
+    <button type="submit" class="back-button">← Back to Homepage</button>
+</form>
 {% endblock %}
