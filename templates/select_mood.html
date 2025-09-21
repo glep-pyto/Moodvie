@@ -18,6 +18,37 @@
     </form>
 </div>
 
+<!-- 🎬 Mood-Based Trailers -->
+<div class="mood-trailers-grid">
+    <div class="trailer-block">
+        <h4>😊 Joy <br> Crazy Rich Asians</h4>
+        <iframe src="https://www.youtube.com/embed/ZQ-YX-5bAs0?si=H6VUygsYu01a-ZqP" title="Crazy Rich Asians Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="trailer-block">
+        <h4>😢 Sadness <br> So Long For Love (再见, 李可乐)</h4>
+        <!-- The `iframe` tag is used to embed another HTML page within the current page -->
+        <!-- Embed YouTube Video is to let users watch it directly without leaving the page -->
+        <!-- The frameborder attribute specifies whether or not to display a visible border around the iframe -->
+        <!-- The allowfullscreen attribute allows the video to be played in fullscreen mode -->
+        <iframe src="https://www.youtube.com/embed/vh41FBb3F6c?si=92rhK7mxB3GTjOvw" title="So Long For Love Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="trailer-block">
+        <h4>😱 Fear <br> Train to Busan</h4>
+        <iframe src="https://www.youtube.com/embed/1ovgxN2VWNc?si=VA7LGUP0F_lSguh_" title="Train to Busan Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="trailer-block">
+        <h4>🤩 Surprise <br> The Shadow's Edge (捕风追影)</h4>
+        <iframe src="https://www.youtube.com/embed/dDuzTlur3NU?si=iKiMVs2W3xpEAI7D" title="The Shadow's Edge Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+</div>
+
 <form action="{{ url_for('home') }}">
     <button type="submit" class="back-button">← Back to Homepage</button>
 </form>
