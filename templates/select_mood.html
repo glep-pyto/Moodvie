@@ -7,14 +7,13 @@
 <div class="select-container">
     <h2>What Mood Do You Want to Feel? 🎭</h2>
     <form method="POST" action="{{url_for('results')}}">
-        <label for="mood">Mood:</label>
-        <select name="mood" class="mood-select" id="mood" required>
-            <option value="">-- Choose a mood --</option>
-            <option value="happy">Happy / Joy 😊</option>
-            <option value="sad">Sad 😢</option>
-            <option value="fear">Fear 😱</option>
-            <option value="surprised">Surprised 🤩</option>
-        </select>
+        <div class="emoji-mood-selection">
+            <input type="hidden" name="mood" id="selected-mood" required>
+            <button type="button" class="emoji-button" data-mood="happy">😊</button>
+            <button type="button" class="emoji-button" data-mood="sad">😢</button>
+            <button type="button" class="emoji-button" data-mood="fear">😱</button>
+            <button type="button" class="emoji-button" data-mood="surprised">🤩</button>
+        </div>
         <button type="submit" class="submit-button">Get Recommendations 🍿</button>
     </form>
 </div>
@@ -22,4 +21,5 @@
 <form action="{{ url_for('home') }}">
     <button type="submit" class="back-button">← Back to Homepage</button>
 </form>
+<script src="{{ url_for('static', filename='js/select_mood.js') }}"></script>
 {% endblock %}
