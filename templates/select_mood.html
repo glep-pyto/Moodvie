@@ -9,10 +9,10 @@
     <form method="POST" action="{{url_for('results')}}">
         <div class="emoji-mood-selection">
             <input type="hidden" name="mood" id="selected-mood" required>
-            <button type="button" class="emoji-button" data-mood="happy">😊</button>
-            <button type="button" class="emoji-button" data-mood="sad">😢</button>
-            <button type="button" class="emoji-button" data-mood="fear">😱</button>
-            <button type="button" class="emoji-button" data-mood="surprised">🤩</button>
+            <button type="button" class="emoji-button" data-mood="happy" title="Feel good and uplifting">😊</button>
+            <button type="button" class="emoji-button" data-mood="sad" title="Emotional and heartfelt">😢</button>
+            <button type="button" class="emoji-button" data-mood="fear" title="Intense and thrilling">😱</button>
+            <button type="button" class="emoji-button" data-mood="surprised" title="Unexpected and exciting">🤩</button>
         </div>
         <button type="submit" class="submit-button">Get Recommendations 🍿</button>
     </form>
@@ -22,16 +22,16 @@
 <div class="mood-trailers-grid">
     <div class="trailer-block">
         <h4>😊 Joy <br> Crazy Rich Asians</h4>
+        <!-- The `iframe` tag is used to embed another HTML page within the current page -->
+        <!-- Embed YouTube Video is to let users watch it directly without leaving the page -->
+        <!-- The frameborder attribute specifies whether or not to display a visible border around the iframe -->
+        <!-- The allowfullscreen attribute allows the video to be played in fullscreen mode -->
         <iframe src="https://www.youtube.com/embed/ZQ-YX-5bAs0?si=H6VUygsYu01a-ZqP" title="Crazy Rich Asians Trailer" frameborder="0"
             allowfullscreen></iframe>
     </div>
 
     <div class="trailer-block">
         <h4>😢 Sadness <br> So Long For Love (再见, 李可乐)</h4>
-        <!-- The `iframe` tag is used to embed another HTML page within the current page -->
-        <!-- Embed YouTube Video is to let users watch it directly without leaving the page -->
-        <!-- The frameborder attribute specifies whether or not to display a visible border around the iframe -->
-        <!-- The allowfullscreen attribute allows the video to be played in fullscreen mode -->
         <iframe src="https://www.youtube.com/embed/vh41FBb3F6c?si=92rhK7mxB3GTjOvw" title="So Long For Love Trailer" frameborder="0"
             allowfullscreen></iframe>
     </div>
