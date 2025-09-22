@@ -41,7 +41,7 @@
     }
 
     .about-section h2 {
-        font-size: 35px;
+        font-size: 38px;
         font-weight: 900;
     }
 
@@ -52,7 +52,7 @@
         color: white;
         border: none;
         border-radius: 8px;
-        font-size: 22px;
+        font-size: 25px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         font-family: 'Times New Roman', Times, serif;
@@ -60,7 +60,8 @@
 
     .start-button:hover {
         background-color: #7DA0CA;
-        transform: scale(1.1);
+        transform: scale(1.4);
+        box-shadow: 0 0 10px #e0effc;
     }
 
     /* Mood Selection Page Styles */
@@ -95,7 +96,7 @@
     }
 
     .emoji-button:hover {
-        transform: scale(2.0);
+        transform: scale(1.8);
     }
 
     .emoji-button.selected {
@@ -113,11 +114,27 @@
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .submit-button:hover {
-        background-color: #4D79A5;
+        background-color: #0a4178;
         transform: scale(1.1);
+    }
+
+    .divider {
+        height: 2px; /* Thickness of the divider */
+        background: linear-gradient(to right, transparent, #5c8ecf, transparent); /* Gradient effect */
+        margin: 40px auto; /* Spacing around the divider */
+        max-width: 80%;
+    }
+
+    .section-heading {
+        text-align: center;
+        font-size: 32px;
+        color: #e0eaf5;
+        margin: 30px 0 10px;
+        font-weight: 600;
     }
 
     .back-button {
