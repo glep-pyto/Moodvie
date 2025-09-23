@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %} Select Mood {% endblock %}
+
+{% block content %}
+
+<div class="select-container">
+    <h2>What Mood Do You Want to Feel? 🎭</h2>
+    <form method="POST" action="{{url_for('results')}}">
+        <div class="emoji-mood-selection">
+            <input type="hidden" name="mood" id="selected-mood" required>
+            <button type="button" class="emoji-button" data-mood="happy" title="Feel good and uplifting">😊</button>
+            <button type="button" class="emoji-button" data-mood="sad" title="Emotional and heartfelt">😢</button>
+            <button type="button" class="emoji-button" data-mood="fear" title="Intense and thrilling">😱</button>
+            <button type="button" class="emoji-button" data-mood="surprised" title="Unexpected and exciting">🤩</button>
+        </div>
+        <button type="submit" class="submit-button">Get Recommendations 🍿</button>
+    </form>
+</div>
+
+<!-- Divider -->
+<div class="divider"></div>
+
+<!-- 🎬 Mood-Based Trailers -->
+<h3 class="section-heading"> Moodvie Picks 🍿</h3>
+
+<div class="mood-trailers-grid">
+    <div class="trailer-block">
+        <h4>😊 Joy <br> Home Alone</h4>
+        <!-- The `iframe` tag is used to embed another HTML page within the current page -->
+        <!-- Embed YouTube Video is to let users watch it directly without leaving the page -->
+        <!-- The frameborder attribute specifies whether or not to display a visible border around the iframe -->
+        <!-- The allowfullscreen attribute allows the video to be played in fullscreen mode -->
+        <iframe src="https://www.youtube.com/embed/K_mXxBj0mX4?si=W5BaPiYTBYVW36Nj" title="Home Alone Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="trailer-block">
+        <h4>😢 Sadness <br> So Long For Love (再见, 李可乐)</h4>
+        <iframe src="https://www.youtube.com/embed/vh41FBb3F6c?si=92rhK7mxB3GTjOvw" title="So Long For Love Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="trailer-block">
+        <h4>😱 Fear <br> Train to Busan (부산행)</h4>
+        <iframe src="https://www.youtube.com/embed/1ovgxN2VWNc?si=VA7LGUP0F_lSguh_" title="Train to Busan Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="trailer-block">
+        <h4>🤩 Surprise <br> The Shadow's Edge (捕风追影)</h4>
+        <iframe src="https://www.youtube.com/embed/dDuzTlur3NU?si=iKiMVs2W3xpEAI7D" title="The Shadow's Edge Trailer" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+</div>
+
+<form action="{{ url_for('home') }}">
+    <button type="submit" class="back-button">← Back to Homepage</button>
+</form>
+<script src="{{ url_for('static', filename='js/select_mood.js') }}"></script>
+{% endblock %}

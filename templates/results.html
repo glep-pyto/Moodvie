@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %} Movie Recommendations {% endblock %}
+
+{% block content %}
+<div class="movie-list-container">
+    <h2>Recommended Movies</h2>
+
+    <div id="movie-list">
+        {% for movie in movies %}
+        <div class="movie-card" style="display: {{ loop.index <= 5 and 'block' or 'none' }};"> 
+            <!-- `loop.index` is a Jinja variable that gives the current position in the loop (starting from 1) -->
+            <!-- only the first 5 cards will be displayed initially -->
+            <!-- if the index is less than or equal to 5, all the cards will be shown -->
+            <!-- if the index is greater than 5, the remaining cards will be hidden -->
+            <h3>{{ movie.title }}</h3>
+            <img src="{{ url_for('static', filename=movie.image) }}" alt="{{ movie.title }}">
+                <p><strong>Year:</strong> {{ movie.year }}</p>
+                <p><strong>Language:</strong> {{ movie.language }}</p>
+                <p><strong>Description:</strong> {{ movie.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% if movies|length > 5 %}
+    <button id="more-button" class="more-button">Show More</button>
+            {% endif %}
+
+            <form action="{{ url_for('select') }}">
+                <button type="submit" class="back-button">← Back to Mood Selection</button>
+            </form>
+</div>
+<script src="{{ url_for('static', filename='js/results.js') }}"></script>
+{% endblock %}

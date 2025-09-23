@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<div class="home-container">
+    <h1>Welcome to Moodvie 🎬</h1>
+    <p>✨ Looking for a specific vibe? Let us find the perfect film to match your emotional journey.</p>
+
+    <div class="about-section">
+        <h2>About Moodvie 🎞️</h2>
+        <p>
+            Moodvie is your personal movie recommendation engine that suggests films based on the emotional
+            experience you want to have.
+            Whether you're chasing joy 😊, seeking a good cry 😢, craving thrills 😱, or longing for surprise 🤩 —
+            Moodvie delivers tailored picks to match the mood you're looking to feel.
+        </p>
+        <p>
+            Just choose the emotional tone you want, and we’ll curate a list of movies that bring that feeling to life.
+            No ratings, no reviews — just pure mood-based discovery.
+        </p>
+        <p>
+            Because sometimes, the best way to feel something… is through a great movie. 🍿
+        </p>
+    </div>
+
+    <button class="start-button" onclick="location.href='{{ url_for('select') }}'">Start Your Moodvie Journey 🚀</button>
+</div>
+{% endblock %}
