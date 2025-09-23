@@ -107,7 +107,7 @@
     .submit-button {
         margin-top: 25px;
         padding: 12px 24px;
-        background-color: #386592;
+        background-color: #4c7dad;
         color: white;
         border: none;
         border-radius: 8px;
@@ -118,8 +118,8 @@
     }
 
     .submit-button:hover {
-        background-color: #0a4178;
-        transform: scale(1.1);
+        background-color: #7bacdc;
+        transform: scale(1.3);
     }
 
     .divider {
@@ -138,6 +138,7 @@
     }
 
     .back-button {
+        font-family: 'Times New Roman', Times, serif;
         padding: 12px 24px;
         background-color: #729AC2;
         color: white;
@@ -153,7 +154,7 @@
 
     .back-button:hover {
         background-color: #90A6BB;
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
     .mood-trailers-grid {
