@@ -10,6 +10,6 @@ def home():
         return render_template('homepage.html', title=title, message=message)
 @app.route('/select')
 def select():
-    return render_template('select_mood.html')  
+   return render_template('select_mood.html')  
 if __name__ == '__main__':
         app.run(debug=True)
