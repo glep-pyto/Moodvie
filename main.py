@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+from movie_data import 
 
 app = Flask(__name__)
 
@@ -12,9 +12,9 @@ def home():
 @app.route('/select')
 def select():
    return render_template('select_mood.html')  
-@app.route('/results')
+@app.route('/results', methods=['GET','POST'])
 def results():
-   return render_template('results.html', method=['GET','POST'])  
+   return render_template('results.html')  
 
 
 
