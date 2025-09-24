@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-#from movie_data import happy_movies, 
+from movie_data import happy_movies,sad_movies,fear_movies,suprised_movies 
 #import a flask module and database from moviedata file
 #flask is python module used to interact with internet files, mainly html similar to Django
 app = Flask(__name__)

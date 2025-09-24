@@ -5,7 +5,8 @@ happy_movies = [
         "year": "1990",
         "language": "English",
         "image": "home_alone.png"
-    },
+    }
+    ,
     {
         "title": "High School Musical",
         "description": "Troy Bolton, the star basketball player at East High, meets Gabriella Montez, a shy academic genius, during a holiday karaoke night. They discover a shared love for singing and decide to audition for the school musical—much to the shock of their classmates, who expect them to stick to their "status quo." Their decision shakes up the school's rigid social structure and sparks a journey of self-discovery, friendship, and breaking stereotypes.",
