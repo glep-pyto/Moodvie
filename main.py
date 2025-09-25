@@ -29,7 +29,7 @@ def results():
     else:
         movies = []
 
-    return render_template('result.html', movies=movies)
+    return render_template('results.html', movies=movies)
 
 if __name__ == '__main__':
     app.run(debug=True)
