@@ -9,7 +9,7 @@ happy_movies = [
     ,
     {
         "title": "High School Musical",
-        "description": "Troy Bolton, the star basketball player at East High, meets Gabriella Montez, a shy academic genius, during a holiday karaoke night. They discover a shared love for singing and decide to audition for the school musical—much to the shock of their classmates, who expect them to stick to their "status quo." Their decision shakes up the school's rigid social structure and sparks a journey of self-discovery, friendship, and breaking stereotypes.",
+        "description": "Troy Bolton, the star basketball player at East High, meets Gabriella Montez, a shy academic genius, during a holiday karaoke night. They discover a shared love for singing and decide to audition for the school musical—much to the shock of their classmates, who expect them to stick to their status quo. Their decision shakes up the school's rigid social structure and sparks a journey of self-discovery, friendship, and breaking stereotypes.",
         "year": "2006",
         "language": "English",
         "image": "high_school_musical.png"
@@ -22,10 +22,10 @@ happy_movies = [
         "image": "jumanji.png"
     },
     {
-        "tttle": "Crazy Rich Asians",
+        "title": "Crazy Rich Asians",
         "description": "Rachel Chu, an American-born economics professor, travels to Singapore with her boyfriend, Nick Young, only to discover that he is one of the country’s wealthiest bachelors. As she navigates the opulent world of Singaporean high society, Rachel faces family scrutiny, jealous rivals, and cultural clashes. With humor, romance, and lavish parties, she learns about love, identity, and the challenges of fitting into a world of extreme wealth.",
         "year": "2018",
-        "language": "Englsih",
+        "language": "English",
         "image": "asians.png"
     },
     {
@@ -208,7 +208,7 @@ sad_movies = [
     },
     {
         "title": "Cyberpunk: Edgerunners (サイバーパンク エッジランナーズ)",
-        "description": "Cyberpunk: Edgerunners is set in Night City, a self-reliant metropolis located in the former state of California that suffers from extensive corruption, cybernetic addiction, and gang violence. The city is split into six districts, each of which has its own precise living requirements, and is controlled by several megacorporations, including Arasaka and its rival Militech. The anime's story is primarily set in Santo Domingo, the oldest, poorest, and most industrial district of Night City, and takes place in 2076. In a dystopia overrun by corruption, crime, and cybernetic implants, an impulsive but talented street kid named David Martinez, after losing everything he has in a drive-by shooting, chooses to survive on the wrong side of the law as an "edgerunner": a high-tech, black-market mercenary also known as a cyberpunk.",
+        "description": "Cyberpunk: Edgerunners is set in Night City, a self-reliant metropolis located in the former state of California that suffers from extensive corruption, cybernetic addiction, and gang violence. The city is split into six districts, each of which has its own precise living requirements, and is controlled by several megacorporations, including Arasaka and its rival Militech. The anime's story is primarily set in Santo Domingo, the oldest, poorest, and most industrial district of Night City, and takes place in 2076. In a dystopia overrun by corruption, crime, and cybernetic implants, an impulsive but talented street kid named David Martinez, after losing everything he has in a drive-by shooting, chooses to survive on the wrong side of the law as an edgerunner: a high-tech, black-market mercenary also known as a cyberpunk.",
         "year": "2022",
         "language": "Japanese",
         "image": "cyberpunk.png"
@@ -299,7 +299,7 @@ fear_movies = [
         "description": "A Hong Kong bomb disposal officer, Cheung Choi-san, faces his most dangerous mission when terrorists plant bombs across the city. Risking his life, he must defuse explosives and save civilians, all while uncovering the mastermind behind the attacks. The film combines high-stakes action with suspenseful drama.",
         "year": "2017",
         "language": "Cantonese",
-        "image": "bomb"
+        "image": "bomb.png"
     },
     {
         "title": "Tokyo Ghoul (東京喰種)",
@@ -310,7 +310,7 @@ fear_movies = [
     },
     {
         "title": "The Promised Neverland (約束のネバーランド)",
-        "description": "In a strange world filled with sentient creatures of different species, an agreement called "The Promise" was made to end a long war between humans and the so-called demons. The Promise was an agreement where each would live in their own separate "worlds": the human world, free from the threat of demons; and the demon world, where human breeding farms were set up to provide food for the demons. By eating humans, demons take on their attributes which prevent them from degenerating into mindless monsters. In the demon world, a special breeding program was set up under the guise of orphanages; there, a human "Mother" would oversee the children to make sure they grew up as intelligent as possible. These children had identifying numbers tattooed on them and had no knowledge of the outside world. They believed that they were orphans and once they reached a certain age or intelligence, they would be taken out for adoption, but were fed to high-ranking demons instead.",
+        "description": "In a strange world filled with sentient creatures of different species, an agreement called The Promise was made to end a long war between humans and the so-called demons. The Promise was an agreement where each would live in their own separate worlds: the human world, free from the threat of demons; and the demon world, where human breeding farms were set up to provide food for the demons. By eating humans, demons take on their attributes which prevent them from degenerating into mindless monsters. In the demon world, a special breeding program was set up under the guise of orphanages; there, a human Mother would oversee the children to make sure they grew up as intelligent as possible. These children had identifying numbers tattooed on them and had no knowledge of the outside world. They believed that they were orphans and once they reached a certain age or intelligence, they would be taken out for adoption, but were fed to high-ranking demons instead.",
         "year": "2016",
         "language": "Japanese",
         "image": "neverland.png"
@@ -325,7 +325,7 @@ fear_movies = [
     
 ]
 
-suprised_movies = [
+surprised_movies = [
     {
         "title": "Edward Scissorhands",
         "description": "Edward, a gentle man with scissors for hands, was created by an inventor who died before completing him. Living in isolation, Edward is discovered by a kind woman who introduces him to her suburban community. While he charms people with his artistic talent and kind heart, his differences also cause misunderstanding, fear, and jealousy. The film explores themes of love, acceptance, loneliness, and societal judgment, blending fantasy, romance, and melancholy.",
