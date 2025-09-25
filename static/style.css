@@ -123,9 +123,12 @@
     }
 
     .divider {
-        height: 2px; /* Thickness of the divider */
-        background: linear-gradient(to right, transparent, #5c8ecf, transparent); /* Gradient effect */
-        margin: 40px auto; /* Spacing around the divider */
+        height: 2px;
+        /* Thickness of the divider */
+        background: linear-gradient(to right, transparent, #5c8ecf, transparent);
+        /* Gradient effect */
+        margin: 40px auto;
+        /* Spacing around the divider */
         max-width: 80%;
     }
 
@@ -209,15 +212,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         background-color: #204986;
         border-radius: 20px;
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
         padding: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         color: #C1E8FF;
         position: relative;
         padding-right: 280px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .movie-card h3 {
@@ -225,10 +230,12 @@
         font-weight: bold;
         margin-bottom: 15px;
         color: #C1E8FF;
+        align-items: flex-start;
     }
 
     .movie-card img {
         width: 200px;
+        height: 280px;
         border-radius: 8px;
         margin-left: 30px;
         box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
@@ -245,6 +252,9 @@
 
     .movie-card-details {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .more-button {
