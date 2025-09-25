@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 from movie_data import happy_movies,sad_movies,fear_movies,suprised_movies 
 #import a flask module and database from moviedata file
 #flask is python module used to interact with internet files, mainly html similar to Django
@@ -17,6 +17,19 @@ def select():
 #GET receives data from the server, in this case from selectmood html
 #POST enables data to be sent over to server
 def results():
+   mood = request.form.get('mood')
+   
+   if mood=="happy":
+      movies=happy_movies
+   elif mood=="sad":
+      movies=sad_movies
+   elif mood=="fear":
+      movies=fear_movies
+   elif mood=="suprised":
+      movies=suprised_movies   
+   else:
+      movies=[]
+
    return render_template('results.html')  
 
 
